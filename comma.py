@@ -1,10 +1,10 @@
-#Comma Code
-#Practice problem from Chapter4
-
 spam = ['apples', 'bananas', 'tofu', 'cats']
 
 def comma(my_list):
     for i in range(len(my_list)):
-        print(my_list[i], end = ", ")
+        if i < len(my_list) - 1:
+            print(my_list[i], end = ", ")
+        else:
+            print("and " + my_list[i])
 
 comma(spam)
