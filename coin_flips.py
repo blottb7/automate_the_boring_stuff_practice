@@ -1,4 +1,5 @@
-#Practice problem number 2 in Chapter 4
+#Practice problem number 2 in Chapter 4:
+#https://automatetheboringstuff.com/2e/chapter4/
 
 import random
 numberOfStreaks = 0
@@ -23,17 +24,11 @@ for experimentNumber in range(number_of_trials):
             if streak == 6:
                 long_streak = True
                 long_streak_list.append(True)
-                #print(streak, long_streak, long_streak_list)
                 break
-                #print(streak)
-                #print(coin_flips[flip])
+
         else:
             streak = 1
-        #print(streak, long_streak)
-            #return long_streak_list
+
     numberOfStreaks = len(long_streak_list)
 
-#print('Chance of streak: %s%%' % (numberOfStreaks / 100))
-print('Chance of streak: ' + str(100 *numberOfStreaks / number_of_trials) + "%")
-#print(len(long_streak_list))
-#print(numberOfStreaks)
+print('Chance of streak: ' + str(100 * numberOfStreaks / number_of_trials) + "%")
