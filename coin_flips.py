@@ -2,7 +2,7 @@
 
 import random
 numberOfStreaks = 0
-for experimentNumber in range(1):
+for experimentNumber in range(10):
     # Code that creates a list of 100 'heads' or 'tails' values.
     coin_flips = []
     for flip in range(100):
@@ -16,6 +16,7 @@ for experimentNumber in range(1):
     # Code that checks if there is a streak of 6 heads or tails in a row.
     streak = 1
     long_streak = False
+    long_streak_list = []
     #while streak < 6:
     #while long_streak == False:
     for flip in range(len(coin_flips)):
@@ -26,11 +27,14 @@ for experimentNumber in range(1):
 
             if streak == 6:
                 long_streak = True
+                long_streak_list.append(True)
+                print(streak, long_streak, long_streak_list)
                 break
                 #print(streak)
                 #print(coin_flips[flip])
         else:
             streak = 1
-        print(streak, long_streak)
+        #print(streak, long_streak)
+            #return long_streak_list
 
 #print('Chance of streak: %s%%' % (numberOfStreaks / 100))
