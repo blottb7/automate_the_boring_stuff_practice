@@ -5,7 +5,7 @@ numberOfStreaks = 0
 long_streak_list = []
 number_of_trials = 10000
 for experimentNumber in range(number_of_trials):
-    
+
     # Code that creates a list of 100 'heads' or 'tails' values.
     coin_flips = []
     for flip in range(100):
@@ -33,6 +33,7 @@ for experimentNumber in range(number_of_trials):
             #return long_streak_list
     numberOfStreaks = len(long_streak_list)
 
-print('Chance of streak: %s%%' % (numberOfStreaks / 100))
+#print('Chance of streak: %s%%' % (numberOfStreaks / 100))
+print('Chance of streak: ' + str(100 *numberOfStreaks / number_of_trials) + "%")
 #print(len(long_streak_list))
 #print(numberOfStreaks)
